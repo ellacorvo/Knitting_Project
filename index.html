@@ -7,32 +7,78 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<div class="container col-xs-12 title-bar mini-padding">
+	<div class="container col-xs-12 title bar mini-padding">
     	<h2 class="col-xs-4 text-padding">Search your stash!</h2>
     </div>
-
     <div class="col-xs-12 grey">
         <div class="container jumbo-padding">
             <h2 class="header-text">Knitting Project Search</h2>
             <p class="lead">Store your yarns and projects, automatically search through yarns you already have to see what you can use for a new project.</p>
+            <button class="btn btn-primary" type="submit">See Your Yarn Stash</button>
+    		<button class="btn btn-primary" type="submit">See Your Projects</button>
+    		<button class="btn ravelry" type="submit"></button>
+
         </div>
     </div>
     <div>
         <div class="row">
             <div class="col-xs-4 rounded-background text-padding border">
                 <h3>Yarn Stash</h3>
-                <button type="button" class="btn btn-primary stash">Add a new yarn</button>
-                <div class="stash-container">text</div>
+			<form>
+			  <div class="form-group">
+			    <label>Add a new yarn to your stash</label>
+			    <input type="text" class="form-control" placeholder="Yarn Brand">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Yarn Weight">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Yards">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Recommended Needle-Size">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Color">
+			  </div>
+			  <div class="form-group">
+			    <label>Attach Image</label>
+			    <input type="file">
+			    <p class="help-block">Attach a snapshot of your yarn here.</p>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Add this yarn!</button>
+			</form>
+            <div class="stash-container mini-padding"></div>
             </div>
             <div class="col-xs-4 rounded-background text-padding border">
                 <h3>Projects</h3>
-                <button type="button" class="btn btn-primary projects">Enter a new project</button>
-                <div class="projects-container">text</div>
+                <form>
+				    <div class="form-group">
+					    <label>Add a new project to your queue</label>
+					    <input type="text" class="form-control" placeholder="Project Name">
+				    </div>
+				    <div class="form-group">
+				  		<input type="text" class="form-control" placeholder="Yarn Weight">
+				    </div>
+				    <div class="form-group">
+				   		<input type="text" class="form-control" placeholder="Yards Required">
+				    </div>
+				    <div class="form-group">
+				   		<input type="text" class="form-control" placeholder="Recommended Needle-Size">
+				    </div>
+				    <div class="form-group">
+				    	<label>Attach Link</label>
+				 	    <input type="file">
+					    <p class="help-block">Attach an image or link to your project.</p>
+				    </div>
+				    <button type="submit" class="btn btn-primary">Add this project!</button>
+				</form>
+                <div class="projects-container mini-padding"></div>
             </div>
             <div class="col-xs-4 rounded-background text-padding border">
                 <h3>Search</h3>
                 <button type="button" class="btn btn-success search">Search your stash!</button>
-                <div class="search-container">text</div>
+                <div class="search-container mini-padding"></div>
             </div>
         </div>
     </div>

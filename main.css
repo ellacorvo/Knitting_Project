@@ -1,8 +1,14 @@
-.title-bar {
-	background-color: purple;
-	color: white;
+
+
+.title {
+
 	background-image: url("http://thumbs.dreamstime.com/x/knitting-wools-needles-24406497.jpg");
 	background-repeat: no-repeat;
+}
+
+.bar {
+	background-color: purple;
+	color: white;
 }
 
 .grey {
@@ -38,4 +44,10 @@
 
 .line {
 	border-bottom: 1px solid darkgray;
+}
+
+.ravelry {
+	background-image: url(http://badges.ravelry.com/rectangle_32.png);
+	height: 35px;
+	width: 85px;
 }
