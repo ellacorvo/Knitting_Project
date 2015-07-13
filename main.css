@@ -1,0 +1,41 @@
+.title-bar {
+	background-color: purple;
+	color: white;
+	background-image: url("http://thumbs.dreamstime.com/x/knitting-wools-needles-24406497.jpg");
+	background-repeat: no-repeat;
+}
+
+.grey {
+	background-color: lightgray;
+}
+
+.jumbo-padding {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.mini-padding {
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.header-text {
+	font-size: 50px;
+}
+
+.rounded-background {
+	background-color: whitesmoke;
+	border-radius: 5px;
+}
+
+.border {
+	border: solid 1px darkgray;
+}
+
+.text-padding {
+	padding-left: 40px;
+}
+
+.line {
+	border-bottom: 1px solid darkgray;
+}
