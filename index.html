@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="container col-xs-12 title bar mini-padding">
-    	<h2 class="col-xs-4 text-padding">Search your stash!</h2>
+    	<h2 class="col-xs-4 text-padding">Search your yarn stash!</h2>
     </div>
     <div class="col-xs-12 grey">
         <div class="container jumbo-padding">
@@ -27,7 +27,6 @@
 			<form class="yarn-form">
 			  <div class="form-group">
 			    <label>Add a new yarn to your stash</label>
-			    <input type="text" id="brand" class="form-control" placeholder="Yarn Brand">
 			  </div>
 			  <div class="form-group">
 			    <input type="text" id="weight" class="form-control" placeholder="Yarn Weight">
@@ -55,29 +54,29 @@
                 <form class="project-form">
 				    <div class="form-group">
 					    <label>Add a new project to your queue</label>
-					    <input type="text" class="form-control" placeholder="Project Name">
+					    <input type="text" id="p-name" class="form-control" placeholder="Project Name">
 				    </div>
 				    <div class="form-group">
-				  		<input type="text" class="form-control" placeholder="Yarn Weight">
+				  		<input type="text" id="p-weight" class="form-control" placeholder="Yarn Weight">
 				    </div>
 				    <div class="form-group">
-				   		<input type="text" class="form-control" placeholder="Yards Required">
+				   		<input type="text" id="p-yards" class="form-control" placeholder="Yards Required">
 				    </div>
 				    <div class="form-group">
-				   		<input type="text" class="form-control" placeholder="Recommended Needle-Size">
+				   		<input type="text" id="p-needles" class="form-control" placeholder="Recommended Needle-Size">
 				    </div>
-				    <div class="form-group">
-				    	<label>Attach Link</label>
-				 	    <input type="file">
-					    <p class="help-block">Attach an image or link to your project.</p>
-				    </div>
-				    <button type="submit" class="btn btn-primary">Add this project!</button>
+			  		<div class="form-group">
+			    		<label>Link an image file</label>
+			   			<input type="text" id="projectPic" class="form-control" placeholder="Link to Image">
+			    		<p class="help-block">Link to the path of your project here.</p>
+			  		</div>
+				    <button type="submit" class="submit-project btn btn-primary">Add this project!</button>
 				</form>
                 <div class="projects-container mini-padding"></div>
             </div>
             <div class="col-xs-4 rounded-background text-padding border">
-                <h3>Search</h3>
-                <button type="button" class="btn btn-success search">Search your stash!</button>
+                <h3>?</h3>
+
                 <div class="search-container mini-padding"></div>
             </div>
         </div>

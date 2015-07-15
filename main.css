@@ -52,7 +52,7 @@
 	width: 85px;
 }
 
-.newYarn {
+.newDiv {
 	background-color: lightgray;
 	border: 1px solid gray;
 	padding: 20px;
@@ -63,5 +63,6 @@
 	margin: 10px;
 }
 
-
-
+.search {
+	float:right;
+}
