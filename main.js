@@ -130,7 +130,12 @@
 		//variable to hold the HTML for else display
 		var notFound = $('<div class="newDiv margin10">No matching yarn found, time to go shopping!</div>');
 		if (searchResults > 0) {
-
+			for (i=0; i<searchResults.length; i++) { 
+				searchResults[i].clone().appendTo('.search-container');
+			}
+		}
+		else {
+			$('.search-container').append(notFound);
 		}
 
 	});
