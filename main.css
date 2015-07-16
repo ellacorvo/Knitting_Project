@@ -1,4 +1,7 @@
-
+body {
+	background-image: url("http://www.bananagrafeeks.com/hanasaurusrex/images/wallpapers/yarn_1600x1200.jpg");
+	background-repeat: no-repeat;
+}
 
 .title {
 
@@ -43,7 +46,7 @@
 }
 
 .line {
-	border-bottom: 1px solid darkgray;
+	border-bottom: 2px solid white;
 }
 
 .ravelry {
@@ -65,4 +68,13 @@
 
 .search {
 	float:right;
+}
+
+.white {
+	color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	width: auto;
 }

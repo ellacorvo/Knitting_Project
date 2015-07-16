@@ -111,7 +111,7 @@
 			}
 			return result;
 		};
-		//assign a nice variable to hold the result of the yardsNeeded function
+		//assign a nice variable to reference the result of the yardsNeeded function
 		var yards = yardsNeeded(projects);
 		console.log(yards);//test
 		//search through the yarns array to find yarns that have >= the yards specified in the previous search
@@ -124,7 +124,7 @@
 			}
 			return results;
 		}
-		//assign a nice variable to hold the result of the yarnSearch function
+		//assign a nice variable to reference the result of the yarnSearch function
 		var searchResults = yarnSearch(yarns);
 		console.log(searchResults);//test
 		//variable to hold the HTML for else display
@@ -150,4 +150,5 @@
 	$('body').on('click', '.clear', function( event ) {
 		$('.search-container').empty();
 	});
+
 

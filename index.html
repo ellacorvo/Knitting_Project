@@ -22,10 +22,10 @@
         <div class="row">
             <div class="col-xs-4 rounded-background text-padding border">
                 <h3>Yarn Stash</h3>
+            <div class="dropdown">
+    		<button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown">Add a new yarn to your stash</button>
+    		<div class="dropdown-menu" style="padding: 10px; background: #ddd">
 			<form class="yarn-form">
-			  <div class="form-group">
-			    <label>Add a new yarn to your stash</label>
-			  </div>
 			  <div class="form-group">
 			    <input type="text" id="weight" class="form-control" placeholder="Yarn Weight">
 			  </div>
@@ -45,13 +45,16 @@
 			  </div>
 			  <button type="submit" class="btn btn-primary">Add this yarn!</button>
 			</form>
+			</div></div>
             <div class="stash-container mini-padding" id="stash-container"></div>
             </div>
             <div class="col-xs-4 rounded-background text-padding border">
                 <h3>Projects</h3>
+                <div class="dropdown">
+    			<button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown">Add a new project to your queue</button>
+    			<div class="dropdown-menu" style="padding: 10px; background: #ddd">
                 <form class="project-form">
 				    <div class="form-group">
-					    <label>Add a new project to your queue</label>
 					    <input type="text" id="p-name" class="form-control" placeholder="Project Name">
 				    </div>
 				    <div class="form-group">
@@ -70,6 +73,7 @@
 			  		</div>
 				    <button type="submit" class="submit-project btn btn-primary">Add this project!</button>
 				</form>
+				</div></div>
                 <div class="projects-container mini-padding"></div>
             </div>
             <div class="col-xs-4 rounded-background text-padding border">
@@ -81,7 +85,9 @@
     </div>
 
     <div class="col-xs-offset-1 col-xs-10 line mini-padding"></div>
-    <div class="col-xs-offset-5 col-xs-12 mini-padding">&copy; Lauren Shugrue 2015</div>
+    <div class="col-xs-offset-5 col-xs-12 mini-padding white">
+    	<h4>&copy; Lauren Shugrue 2015</h4>
+    </div>
 
 
 	
