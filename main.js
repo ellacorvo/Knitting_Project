@@ -46,7 +46,7 @@
 		//create yarn instance
 		var newYarnEntry = new Yarn(newWeight, newYards, newNeedles, newColor, yarnId);
 		//assign defult photo if no link is input in form
-		if (photo = " ") {
+		if (photo === "") {
 			photo = "http://cdn.surfnetkids.com/coloring/images/ball_of_yarn.jpg";
 		}
 		//variables to hold html for photo and button
@@ -73,7 +73,7 @@
 		//create project instance
 		var newProjectEntry = new Project(projectName, pWeight, pYards, pNeedles, projectId);
 		//assign defult photo if no link is input in form
-		if (pPhoto = " ") {
+		if (pPhoto === "") {
 			pPhoto = "http://thumbs.dreamstime.com/x/sheep-knitted-sweater-hand-drawn-illustration-46213087.jpg";
 		}
 		else {
