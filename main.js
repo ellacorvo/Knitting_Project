@@ -23,16 +23,14 @@
 	}
 //prototype methods to create HTML and text elements
 	Yarn.prototype.create = function() {
-		var newYarn = $('<div id=' + this.id + ' class="newDiv margin10"></div>');
-		newYarn.text("Weight: "  + this.weight + " Yards: " + this.yards + " Needle Size: " + this.needlesize + " Color: " + this.color);
+		var newYarn = $('<div id=' + this.id + ' class="newDiv margin10"><ul><li>Weight: ' + this.weight + ' </li><li> Yards: ' + this.yards + ' </li><li> Needle Size: ' + this.needlesize + '</li><li>Color: ' + this.color + '</li><ul></div>');
 		return newYarn;
 	}
 
 	Project.prototype.create = function() {
-		var newProject = $('<div id=' + this.id + ' class="newDiv margin10"></div>');
-		newProject.text("Name: "  + this.name + " Weight: " + this.weight + " Yards: " + this.yards + " Needle Size: " + this.needlesize);
+		var newProject = $('<div id=' + this.id + ' class="newDiv margin10"><ul><li>Name: '  + this.name + ' </li><li> Weight: ' + this.weight + ' </li><li> Yards: ' + this.yards + ' </li><li> Needle Size: ' + this.needlesize + '</li><ul></div>');
 		return newProject;
-	}
+	};
 //click handler for yarn form that creates new instance of yarn class, pushes it to the array, and appends it to the DOM
 	$('.yarn-form').on('submit', function() {
 		yarnCount++; //counter creates a unique id for each instance created

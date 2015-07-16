@@ -78,3 +78,6 @@ body {
 	display: block;
 	width: auto;
 }
+ .float-left {
+ 	float: left;
+ }
