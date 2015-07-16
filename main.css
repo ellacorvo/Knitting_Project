@@ -1,6 +1,6 @@
 body {
 	background-image: url("http://www.bananagrafeeks.com/hanasaurusrex/images/wallpapers/yarn_1600x1200.jpg");
-	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 .title {
