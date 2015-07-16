@@ -128,23 +128,26 @@
 		var searchResults = yarnSearch(yarns);
 		console.log(searchResults);//test
 		//variable to hold the HTML for else display
-		//appending search results to DOM - still not working :(
 		var notFound = $('<div class="newDiv margin10">No matching yarn found, time to go shopping!</div>');
-		var toClone = 
-
-		// if (searchResults > 0) {  
+		//function appends search results to DOM
+		var toClone = function(searchResults) {
+			if (searchResults.length > 0) {
 			for (i=0; i<searchResults.length; i++) { 
-				if ($('div').attr('id') === searchResults[i].id) {
-					$('div').clone().appendTo('.search-container');
+					$('#' + searchResults[i].id).clone().appendTo('.search-container');
 				}
+			}
 				else {
 					$('.search-container').append(notFound);
 				}
-			}
-		// }
+			
+		}
+		toClone(searchResults)//call results display and pass in results array
 
 
 	});
 
-
+	//clears all search results from DOM
+	$('body').on('click', '.clear', function( event ) {
+		$('.search-container').empty();
+	});
 
