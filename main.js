@@ -128,7 +128,7 @@
 		var searchResults = yarnSearch(yarns);
 		console.log(searchResults);//test
 		//variable to hold the HTML for else display
-		var notFound = $('<div class="newDiv margin10">No matching yarn found, time to go shopping!</div>');
+		var notFound = $('<div class="newDiv margin10">Oh snap! You don\t have enough yarn. Time to go shopping!</div>');
 		//function appends search results to DOM
 		var toClone = function(searchResults) {
 			if (searchResults.length > 0) {
