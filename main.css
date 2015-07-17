@@ -74,10 +74,14 @@ body {
 	color: white;
 }
 
-.dropdown:hover .dropdown-menu {
-	display: block;
-	width: auto;
-}
  .float-left {
  	float: left;
+ }
+
+ .yarn-form-container {
+ 	display:none;
+ }
+
+ .project-form-container {
+ 	display:none;
  }

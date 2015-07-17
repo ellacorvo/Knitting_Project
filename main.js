@@ -54,7 +54,8 @@
 		yarns.push(newYarnEntry);
 		//append new instance to DOM
 		$('.stash-container').append(newYarnEntry.create().append(yarnPic).append(deleteButton));
-		//prevent default submit behavior
+		//hide form after submitting entry
+		$('.yarn-form-container').hide(500);
 		return false;
 	});
 
@@ -85,7 +86,8 @@
 		projects.push(newProjectEntry);
 		//append new instance to DOM
 		$('.projects-container').append(newProjectEntry.create().append(projectPic).append(deleteButton).append(searchButton));
-		//prevent default submit behavior
+		//hide form after submitting entry
+		$('.project-form-container').hide(500);
 		return false;
 	});
 	//deletes yarn or project instance from DOM
@@ -148,5 +150,11 @@
 	$('body').on('click', '.clear', function( event ) {
 		$('.search-container').empty();
 	});
-
-
+	//show form on click
+	$('body').on('click', '.yarn-form-button', function( event ) {
+		$('.yarn-form-container').show(500);
+	});
+	//show form on click
+	$('body').on('click', '.project-form-button', function( event ) {
+		$('.project-form-container').show(500);
+	});

@@ -22,9 +22,8 @@
         <div class="row">
             <div class="col-xs-12 col-md-4 rounded-background text-padding border">
                 <h3>Yarn Stash</h3>
-            <div class="dropdown">
-    		<button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown">Add a new yarn to your stash</button>
-    		<div class="dropdown-menu" style="padding: 10px; background: #ddd">
+                <button type="submit" class="btn btn-default navbar-btn yarn-form-button">Add a new yarn to your stash</button>
+                <div class="yarn-form-container">
 			<form class="yarn-form">
 			  <div class="form-group">
 			    <input type="text" id="weight" class="form-control" placeholder="Yarn Weight">
@@ -45,14 +44,13 @@
 			  </div>
 			  <button type="submit" class="btn btn-primary">Add this yarn!</button>
 			</form>
-			</div></div>
+			</div>
             <div class="stash-container mini-padding" id="stash-container"></div>
             </div>
             <div class="col-xs-12 col-md-4 rounded-background text-padding border">
                 <h3>Projects</h3>
-                <div class="dropdown">
-    			<button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown">Add a new project to your queue</button>
-    			<div class="dropdown-menu" style="padding: 10px; background: #ddd">
+                <button type="submit" class="btn btn-default navbar-btn project-form-button">Add a new project to your queue</button>
+                <div class="project-form-container">
                 <form class="project-form">
 				    <div class="form-group">
 					    <input type="text" id="p-name" class="form-control" placeholder="Project Name">
@@ -73,7 +71,7 @@
 			  		</div>
 				    <button type="submit" class="submit-project btn btn-primary">Add this project!</button>
 				</form>
-				</div></div>
+				</div>
                 <div class="projects-container mini-padding"></div>
             </div>
             <div class="col-xs-12 col-md-4 rounded-background text-padding border">
